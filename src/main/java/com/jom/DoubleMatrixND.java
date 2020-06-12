@@ -211,7 +211,7 @@ public class DoubleMatrixND
 
 		this.size = IntFactory1D.dense.make(size).copy();
 		this.numDim = size.length;
-		if (this.size.getMinLocation()[0] <= 0) throw new RuntimeException("Wrong size of n-array");
+		if (this.size.getMinLocation()[0] < 0) throw new RuntimeException("Wrong size of n-array");
 		this.numElem = IntMatrixND.prod(this.size);
 		if (this.numElem != (int) values.size()) throw new RuntimeException("Wrong size of n-array");
 		this.x = values;

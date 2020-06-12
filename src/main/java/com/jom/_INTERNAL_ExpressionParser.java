@@ -46,7 +46,7 @@ class _INTERNAL_ExpressionParser extends AbstractEvaluator<Expression>
 		listOperators.put("/ 2", new Object[]{"/", 2, Operator.Associativity.LEFT, 2, "com.jom._OPERATOR_E2EDIVIDE", true}); // e2eMultiply
 		listOperators.put("./ 2", new Object[]{"./", 2, Operator.Associativity.LEFT, 2, "com.jom._OPERATOR_E2EDIVIDE", true}); // e2eMultiply
 		listOperators.put("^ 2", new Object[]{"^", 2, Operator.Associativity.LEFT, 3, "com.jom._OPERATOR_POW", true}); // pow
-		listOperators.put(".^ 2", new Object[]{"^", 2, Operator.Associativity.LEFT, 3, "com.jom._OPERATOR_POW", true}); // pow
+		listOperators.put(".^ 2", new Object[]{".^", 2, Operator.Associativity.LEFT, 3, "com.jom._OPERATOR_POW", true}); // pow
 		listOperators.put("' 1", new Object[]{"'", 1, Operator.Associativity.LEFT, 4, "com.jom._OPERATOR_TRANSPOSE", false}); // e2eMultiply
 
 		listFunctions = new HashMap<String, Object[]>();
